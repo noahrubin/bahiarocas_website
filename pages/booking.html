@@ -8,6 +8,8 @@
         <meta name="author" content="Noah Rubin">
         <!-- BootStrap CSS -->
         <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <!-- FullCalendar CSS -->
+        <link rel="stylesheet" href="../node_modules/fullcalendar/dist/fullcalendar.min.css">
         <!-- Custom CSS Files -->
         <link rel="stylesheet" href="../css/app.css">
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -51,16 +53,35 @@
             </div><!-- /.container -->
         </nav>
         <!-- Booking iFrame -->
-
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2 col-sm-offset-10">
+                    <a class="inquire btn btn-primary" href="../pages/contact.html">
+                        <b>Inquire about booking</b>
+                        <span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div id="calendar"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 col-sm-offset-10">
+                    <a class="inquire btn btn-primary" href="../pages/contact.html">
+                        <b>Inquire about booking</b>
+                        <span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
         <!-------------------->
         <hr>
         <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-5 col-md-4">
-                        <a href="http://www.vrbo.com/724314" rel="nofollow"><img src="http://www.vrbo.com/haow/api/image/vrbo/vrbo/724314/tenure" alt="HomeAway Property" style="border:none;"/></a>
-                    </div>
-                    <div class="col-sm-5 col-md-4 col-sm-offset-2 col-md-offset-4">
+                    <div class="col-sm-10 col-md-4 col-sm-offset-2 col-md-offset-8">
                         <p class="copyright">
                             &copy; 2016 <a href="#" target="">Casa Bahia Rocas</a> <br>
                             <b>Made by</b>: <a href="https://github.com/noahrubin" target="_blank">Noah Rubin</a>
@@ -69,7 +90,10 @@
                 </div>
             </div>
         </footer>
-
-        <script src="../node_modules/jquery/dist/jquery.min.js" async></script>
+        <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="../node_modules/fullcalendar/node_modules/moment/min/moment.min.js" charset="utf-8"></script>
+        <script src="../node_modules/fullcalendar/dist/fullcalendar.min.js" charset="utf-8"></script>
+        <script src="../node_modules/fullcalendar/dist/gcal.js" charset="utf-8"></script>
+        <script src="../js/fullcalendar/fullcalendar.custom.js" charset="utf-8"></script>
     </body>
 </html>

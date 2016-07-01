@@ -30,7 +30,7 @@
         <nav class="navbar navbar-inverse topnav">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -52,18 +52,41 @@
         </nav>
 
         <!-- Slider -->
-        <div class="container">
-            <div class="row">
-                <ul id="slider">
-                    <li><img src="../assets/house_photos/Mayo-2013-169.jpg" alt="" /></li>
-                    <li><img src="../assets/house_photos/Mayo-2013-568.jpg" alt="" /></li>
-                    <li><img src="../assets/house_photos/Mayo-2013-589.jpg" alt="" /></li>
-                    <li><img src="../assets/house_photos/Mayo-2013-1210.jpg" alt="" /></li>
-                </ul>
+        <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 800px; height: 456px; overflow: hidden; visibility: hidden; background-color: #24262e;">
+            <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 800px; height: 356px; overflow: hidden;">
+                <div data-p="144.50" style="display: none;">
+                    <img data-u="image" src="../assets/house_photos/Mayo-2013-169.jpg" />
+                    <img class-"img-responsive img-thumbnail" data-u="thumb" src="../assets/house_photos/Mayo-2013-169.jpg" />
+                </div>
+                <div data-p="144.50" style="display: none;">
+                    <img data-u="image" src="../assets/house_photos/Mayo-2013-589.jpg" />
+                    <img class-"img-responsive img-thumbnail" data-u="thumb" src="../assets/house_photos/Mayo-2013-589.jpg" />
+                </div>
+                <div data-p="144.50" style="display: none;">
+                    <img data-u="image" src="../assets/house_photos/Mayo-2013-568.jpg" />
+                    <img class-"img-responsive img-thumbnail" data-u="thumb" src="../assets/house_photos/Mayo-2013-568.jpg" />
+                </div>
+                <div data-p="144.50" style="display: none;">
+                    <img data-u="image" src="../assets/house_photos/Mayo-2013-1306.jpg" />
+                    <img class-"img-responsive img-thumbnail" data-u="thumb" src="../assets/house_photos/Mayo-2013-1306.jpg" />
+                </div>
+            </div>
+            <!-- Thumbnail Navigator -->
+            <div data-u="thumbnavigator" class="jssort01" style="position:absolute;left:0px;bottom:0px;width:800px;height:100px;" data-autocenter="1">
+                <!-- Thumbnail Item Skin Begin -->
+                <div data-u="slides" style="cursor: default;">
+                    <div data-u="prototype" class="p">
+                        <div class="w">
+                            <div data-u="thumbnailtemplate" class="t"></div>
+                        </div>
+                        <div class="c"></div>
+                    </div>
+                </div>
+                <!-- Thumbnail Item Skin End -->
             </div>
         </div>
         <!------------------>
-        <div class="container">
+        <div class="overview container">
             <div class="row">
                 <div class="description col-sm-12 col-md-8">
                     <div class="panel panel-default">
@@ -111,10 +134,7 @@
         <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-5 col-md-4">
-                        <a href="http://www.vrbo.com/724314" rel="nofollow"><img src="http://www.vrbo.com/haow/api/image/vrbo/vrbo/724314/tenure" alt="HomeAway Property" style="border:none;"/></a>
-                    </div>
-                    <div class="col-sm-5 col-md-4 col-sm-offset-2 col-md-offset-4">
+                    <div class="col-sm-10 col-md-4 col-sm-offset-2 col-md-offset-8">
                         <p class="copyright">
                             &copy; 2016 <a href="#" target="">Casa Bahia Rocas</a> <br>
                             <b>Made by</b>: <a href="https://github.com/noahrubin" target="_blank">Noah Rubin</a>
@@ -125,7 +145,7 @@
         </footer>
 
         <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-        <script src="node_modules/zaccordion/js/jquery.zaccordion.min.js" charset="utf-8"></script>
-        <script src="js/slider2/zaccordion.custom.js" charset="utf-8"></script>
+        <script src="../node_modules/image-gallery/js/jssor.slider.min.js" charset="utf-8"></script>
+        <script src="../node_modules/image-gallery/js/jssor.slider.custom.js" charset="utf-8"></script>
     </body>
 </html>

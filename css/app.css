@@ -2,9 +2,9 @@
     text-indent: 50px;
 }
 
-/*.navbar {
-    margin-bottom: 0px;
-}*/
+.overview {
+    margin-top: 20px;
+}
 
 .houseMetaList {
     list-style: none;
@@ -17,6 +17,14 @@
 .bedroom img {
     width: 100%;
     height: 67%;
+}
+
+.inquire {
+    font-size: 13px;
+}
+
+.inquire, #calendar {
+    margin-bottom: 10px;
 }
 
 #slider {
